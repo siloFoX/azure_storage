@@ -14,7 +14,7 @@ def record(name_list) :
     return data
 
 
-def main() :
+def start() :
     name_list = Blob_upload()
     data = record(name_list)
     Cosmos_upload(data = data)
@@ -22,7 +22,7 @@ def main() :
 
 if __name__ == '__main__' :
     try :
-        main()
+        start()
 
     except Exception as e:
         print(e) 
