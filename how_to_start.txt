@@ -1,0 +1,14 @@
+# need python
+# need python && python-pip
+
+mkdir Blob_data
+mkdir Json_data
+
+pip install azure
+
+git clone https://github.com/Azure/azure-sdk-for-python.git
+python setup.py install
+
+pip install -m pymongo
+
+python quickstart.py
